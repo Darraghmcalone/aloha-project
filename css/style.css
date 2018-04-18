@@ -1,0 +1,57 @@
+<link rel=“stylesheet” href=“//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css”>
+
+@font-face{
+	font-family: "my-cool-font";
+	src: url("../fonts/Railway-Light.ttf");
+}
+authour" content>
+.section {
+
+height: 500px;
+width: 100%;
+background-image: url("http://www.stevensegallery.com/1000/600");
+background-size:cover;
+background-attachment: fixed;
+}
+
+.flower-bkgd {
+  position: relative;
+}
+.flower-bkgd img {
+  height: 200px;
+  width: 300px;
+ }
+ .girl-front {
+  position: absolute;
+}
+p {
+font-size: 14px;
+height: 17px;
+margin-right: 40px
+}
+
+h1 {
+font-size:50px;
+}
+
+body {
+	height: 3000px;
+}
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
