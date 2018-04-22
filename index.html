@@ -1,122 +1,171 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-	<p id="text">Welcome to Spots!</p>
-
-	<meta charset="utf-8">
-	<title>Alopa Apparel</title>
-	<section class="Menu">
-	<meta name="authour" content>
-	<meta name="description" content>
-	<meta name="keywords" content>
-</section>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-	<link rel="stylesheet" type="css/style.css" >
-</style>
-
-<script src="js/alopa.js">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+		<link rel="stylesheet" href="css/flickity.css" media="screen">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+		<script src="js/flickity.pkgd.min.js"></script>
+		<script src="js/alopa.js"></script>
+	</head>
+	<body>
 	
-
-
-</script>
-
-</head>
-<body>
-	<header class="Menu">
-	<img src="images/aloha-logo.svg" alt=""/>
-
-	<nav>
-		<ul>
-			<li><a href="">About</a></li>
-			<li><a href="">Shop</a></li>
-			<li><a href="">Featured</a></li>
-			<li><a href="">Updates</a></li>
-		</ul>
-	</nav>
-	<div>
-		<img class="flower-bkgd"src="images/flower-bkgd.jpg">
-		<img class="girl-front"src="images/banner-girl.png">
-		<div><h2 class="centered">
+  		<header>
+			<div class="menu-bar">
+				<div class="logo">
+					<img src="images/aloha-logo.svg" alt="Aloha logo"/>
+				</div>
+			<div class="menu">
+				<ul>
+					<li><a href="about">about</a></li>
+					<li><a href="category-images">shop</a></li>
+					<li><a href="most-loved">featured</a></li>
+					<li><a href="updates">updates</a></li>
+				</ul>
+			</div>
+			<div class="cart"> <img src="images/cart-icon.svg" alt="Aloha Cart">
+			</div>
+			</div>
+		</header>
+	
+		<!––container, 
+		get layout done first and make everything accesible for css and js. do mobile first design later on. make your code readable as it will help alot down the line when debugging.*/-->
+	<section class="header-container">
+		<div class="container-text">
+		<h2 class="collection-uppercase">New Collection</h2>	
+		<h2 class="seasons">Spring Summer 2016</h2>
+		</section>	
 		
-		New Collection</h2></div>
-	</div>
-	</header>
-	<section>
-		<h2 class="positioning-test
-		">New Collection</h2>
-		<h1>Spring Summer 2016</h1>
+	
+	<section class="crafted-styles">
+	 
+		<h3><span class="italic-style"> Hand-Crafted</span>Styles</h3>
+		
+		<p>
+			Aloha Apparel Co. sells only the finest ready-to-travel clothing.
+			Browse our current selection of products or sign-up for updates below.
+		</p>
+
 	</section>
 
-	<section>
-		<header>
-			<h3>Hand Crafted</h3>
-			<p> .</p>
-			</header>
-			<div>
-			<p><a href="">Hen</a></p>
-			</div>
-			<div>
-				<p><a href="">Women</a></p>
-			</div>
-			<div>
-				<p><a href="">Hats</a></p>
-			</div>
-		</section>
-
-		<form>
-			<label for ="f_name">
-				First name
-			
-			<input type="text" >
-			</label>
-		
-
-			<label for ="s_name">
-				Second name
-				<select>
-					<option value="banana">Banana</option>
-					<option value="strawberry">Strawberry</option>
-					<option value="peach">Peach
-					</option>
-
-				</select>
-			
-			<input type="text" >
-			</label>
-			<input type="text" id="s_name">
-
-			<input type="radio" name="gender" value="male" id="male">
-			<input type="radio" name="gender" value="female" id="female">
-			<button type="submit">Submit</button>
-		</form>
-
-
-			</section>
-			
-			
-		
+	<section class="categories">
+		<div class="product-categories">
+			<div class="mens-li">Mens</div>
+			<div class="trends-li">Trends </div>
+			<div class="glasses-li"> Glasses </div>
+			<div class="sale-li"> Sale </div>
+			<div class="bags-li"> Bags </div>
+		</div>	
 	</section>
 
+	<section class="most-loved-products">		
+		<h1 align="center"> Most-Loved Products</h1>
+ 		<div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+ 	 	<div class="carousel-cell">
+ 	 		<img src="images/blue-hipster-backpack.jpg" alt="blue-hipster-backpack">
+ 	 		<h4>Bags</h4>
+ 	 		<h2>Blue Hipster Backpack</h2>
+			<p>$99.00</p>
+ 	 	</div>
+ 	 	<div class="dotted-carousel-cell">
+ 	 		<img src="images/pink-dotted-dress.jpg" alt="pink-dotted-dress">
+ 	 		<h4>Dresses</h4>
+            <h2>Pink Dotted Dress</h2>
+            <p>$99.00</p>
+ 	 	</div>
+  		<div class="denim-carousel-cell">
+  			<img src="images/demin-overall-shorts.jpg" alt="demin-overall-shorts">
+  			<h4>Demin</h4>
+            <h2>Demin Overall Shorts</h2>
+            <p>$89.00</p>
+         </div>
+
+  		<div class="checked-carousel-cell">
+  			<img src="images/checked-stretch-dress.jpg" alt="checked-stretch-dress">
+  			<h4>Checked</h4>
+            <h2>Checked Strech Dress</h2>
+            <p>$69.00</p>
+        </div>
+
+  		<div class="blue-carousel-cell">
+  			<img src="images/cotton-blue-shirt.jpg" alt="cotton-blue-shirt">
+  			<h4>Shirts</h4>
+            <h2>Cotton Blue Shirt</h2>
+            <p>$40.00</p>
+        </div>
+
+  		<div class="yellow-carousel-cell">
+  			<img src="images/cotton-yellow-tshirt.jpg" alt="cotton-yellow-shirt">
+  			<h4>Yellow</h4>
+            <h2>Cotton Yellow Shirt</h2>
+            <p>$50.00</p>
+		</div>
+
+		<div class="knit-carousel-cell">
+			<img src="images/stretch-knit-dress.jpg" alt="stretch-knit-dress">
+			<h4>Knit</h4>
+            <h2>Strech Knit Dress</h2>
+            <p>$46.00</p>
+        </div>
+
+	</section>
+
+	<section class="updates">
+		<div class="centered"><h2>Sign-up for Updates</h2>
+		<p>Stay updated on our latest product releases, be first to find out<br> about upcoming sales, and get free style tips from our blog.<br> Unsubscribe at any time.
+		</p>	
+		
+    	<div id="background">
+  			<div id="email-form">
+  			<form action="#" >
+  			<input type="text" name="email" class="email-input">
+  			<div class="submit-button">
+    		<input type="submit">
+  			</div>
+  			</form>
+ 	 		</div>
+		</div>
+    	</div>
+    	
+		
+		
+		
+	</section>
 	
 
 	</body>
-	<footer class="footer">
 		
-		
-		 <div="social">
-		 <p><a href=""><i class="fab fa-facebook-square"></i></a>
-			<a href=""><i class="fab fa-snapchat-square"></i></a>
-			<a href=""><i class="fab fa-instagram"></i></a>
-			<a href=""><i class="fas fa-envelope"></i></a>
-		</p>
-		</div>
-		<div class="contact">
-		<p>	 &copy; 2017 Alopa Apparel Co. 
-			 Powered by HTMl and CSS 
-			 604-604-6040. <href="info@alophaaparel.com"></href="info@alophaaparel.com"></l>
-			</p>
-		</div>
-	</footer>
+<footer class="container">
+        <div class="footertext">
+            <div class="copyright">
+                <p class="fa fa-copyright footerinfo"> 2016 Aloha Apparel Co.</p>
+                <p>Powered by HTML and CSS.</p>
+            </div>
+            <div class="contactinfo">
+                <p><span class="phonenumbertext">604-604-6040.</span>
+                <span class="emailtext">info@alohaapparel.com</span></p>
+            </div>
+            <div class="locationtext">
+                <p class="address">1490 W Broadway</br>
+                    Vancouver, BC, Canada</p>
+            </div>
+        </div>
+    <section class="end">	
+	<div class="social">
+		<address>
+		 	<i class="fab fa-facebook-f">Facebook</i>
+		 	<i class="fab fa-twitter">Twitter</i>
+		 	<i class="fab fa-instagram">Instagram</i>
+		 	<i class="fab fa-pinterest">Pinterest</i>
+		 	<i class="fab fa-google-plus-g">Google Plus</i>
+
+		</address>
+	</div>
+	
+	
+	</section>
+</footer>
 
 </html>
