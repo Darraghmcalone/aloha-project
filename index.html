@@ -19,10 +19,10 @@
 				</div>
 			<div class="menu">
 				<ul>
-					<li><a href="about">about</a></li>
-					<li><a href="category-images">shop</a></li>
-					<li><a href="most-loved">featured</a></li>
-					<li><a href="updates">updates</a></li>
+					<li><a href="about">About</a></li>
+					<li><a href="category-images">Shop</a></li>
+					<li><a href="most-loved">Featured</a></li>
+					<li><a href="updates">Updates</a></li>
 				</ul>
 			</div>
 			<div class="cart"> <img src="images/cart-icon.svg" alt="Aloha Cart">
@@ -30,8 +30,7 @@
 			</div>
 		</header>
 	
-		<!––container, 
-		get layout done first and make everything accesible for css and js. do mobile first design later on. make your code readable as it will help alot down the line when debugging.*/-->
+	
 	<section class="header-container">
 		<div class="container-text">
 		<h2 class="collection-uppercase">New Collection</h2>	
@@ -41,29 +40,29 @@
 	
 	<section class="crafted-styles">
 	 
-		<h3><span class="italic-style"> Hand-Crafted</span>Styles</h3>
+		<h2><span class="italic-style"> Hand-Crafted</span>Styles</h2>
 		
-		<p>
+		<p class="about-text">
 			Aloha Apparel Co. sells only the finest ready-to-travel clothing.
 			Browse our current selection of products or sign-up for updates below.
 		</p>
 
 	</section>
 
-	<section class="categories">
-		<div class="product-categories">
-			<div class="mens-li">Mens</div>
-			<div class="trends-li">Trends </div>
-			<div class="glasses-li"> Glasses </div>
-			<div class="sale-li"> Sale </div>
-			<div class="bags-li"> Bags </div>
-		</div>	
-	</section>
+ 	<ul id="shop">
+    	<li class="cat"><a href="">Men's</a></li>
+	    <li class="cat"><a href="">Trend</a></li>
+	    <li class="cat"><a href="">Glasses</a></li>
+	    <li class="cat"><a href="">Sale</a></li>
+	    <li class="cat"><a href="">Bags</a></li>
+	    <li class="cat"><a href="">Women's</a></li>
+	 </ul>
 
-	<section class="most-loved-products">		
-		<h1 align="center"> Most-Loved Products</h1>
+
+	<section class="most-loved">		
+		<h1>Most-Loved <span>Products</span></h1>
  		<div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
- 	 	<div class="carousel-cell">
+ 	 	<div class="bags-carousel-cell">
  	 		<img src="images/blue-hipster-backpack.jpg" alt="blue-hipster-backpack">
  	 		<h4>Bags</h4>
  	 		<h2>Blue Hipster Backpack</h2>
@@ -112,29 +111,27 @@
 
 	</section>
 
-	<section class="updates">
-		<div class="centered"><h2>Sign-up for Updates</h2>
-		<p>Stay updated on our latest product releases, be first to find out<br> about upcoming sales, and get free style tips from our blog.<br> Unsubscribe at any time.
-		</p>	
+	<div id="updates">
+    <h2>
+      <span class="italic">Sign-up for </span>
+      <span class="bold">Updates</span>
+    </h2>
+
+
+    <p>
+      Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our
+      blog. Unsubscribe at any time.
+    </p>
 		
-    	<div id="background">
-  			<div id="email-form">
-  			<form action="#" >
-  			<input type="text" name="email" class="email-input">
-  			<div class="submit-button">
-    		<input type="submit">
-  			</div>
-  			</form>
- 	 		</div>
-		</div>
-    	</div>
+     <form class="signup" id="signup">
+      <input type="email" id="email" placeholder="  Your Email">
+      <input type="submit" class="submit" value="Subscribe">
+    </form>
     	
-		
-		
-		
+	
 	</section>
 	
-
+</div>
 	</body>
 		
 <footer class="container">
