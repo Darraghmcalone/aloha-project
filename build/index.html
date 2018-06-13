@@ -3,13 +3,14 @@
 	<head>
         <title>Alopha</title>
 		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <script src="js/flickity.pkgd.min.js"></script>
 		<link rel="stylesheet" href="css/flickity.min.css" media="screen">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/style.css">
 		
-		<script src="js/alopa.js"></script>
+		
 	</head>
 	<body>
 	<a class="skip-link" href="#content">Skip to content</a>
@@ -124,7 +125,7 @@
                     <form method="post" action="#" novalidate="novalidate"> 
                         
                         <input id="emailInput" type="email" name="email" placeholder="Your Email"/>
-                        <button type="submit">Subscribe</button>
+                        <button type="submit" id="submit">Subscribe</button>
                     </form>
                 </div>
             </section>
@@ -156,5 +157,10 @@
         </aside>
         </div>
     </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script  src="js/bundle.js"></script>
+
 </body>
 </html>
+/*display flex -> flex 0 50% for small box and flex 0 100% for big box.
+big box flex 46% for desktop.*/
